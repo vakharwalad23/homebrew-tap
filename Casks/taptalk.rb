@@ -7,7 +7,7 @@ cask "taptalk" do
   desc "Local speech-to-text dictation"
   homepage "https://github.com/vakharwalad23/tap-talk"
 
-  depends_on macos: :ventura
+  depends_on macos: :sonoma
   depends_on arch: :arm64
 
   app "TapTalk.app"
