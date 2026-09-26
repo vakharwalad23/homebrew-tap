@@ -12,9 +12,10 @@ cask "taptalk" do
 
   app "TapTalk.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/TapTalk.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/TapTalk.app"],
+        must_succeed: false
   end
 
   uninstall quit: "talk.tap.app"
