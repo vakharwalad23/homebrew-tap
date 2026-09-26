@@ -1,6 +1,6 @@
-cask "taptalk" do
-  version "0.4.1"
-  sha256 "5e9ab3e7e18765546847123f3fefbd98ea122ae9207bafe109b06947fccc62d2"
+cask "taptalk@0.4.0" do
+  version "0.4.0"
+  sha256 "74913d3cf3efa28d77e49efb46a8accba83a551d1c5760f292b865f3f579ece9"
 
   url "https://github.com/vakharwalad23/tap-talk/releases/download/v#{version}/TapTalk-#{version}.dmg"
   name "TapTalk"
@@ -9,6 +9,8 @@ cask "taptalk" do
 
   depends_on macos: :sonoma
   depends_on arch: :arm64
+
+  conflicts_with cask: "taptalk"
 
   app "TapTalk.app"
 
