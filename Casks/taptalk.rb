@@ -1,6 +1,6 @@
 cask "taptalk" do
-  version "0.5.1"
-  sha256 "fb6ca24201101118a05fe116e79e4bc08bd00f70410c104c18af586c1d710443"
+  version "0.5.2"
+  sha256 "d33d0ee8fc593a368bbcad87202c4bcfc652862f744f3da85b1d0a3c478c6816"
 
   url "https://github.com/vakharwalad23/tap-talk/releases/download/v#{version}/TapTalk-#{version}.dmg"
   name "TapTalk"
